@@ -1,0 +1,39 @@
+# 🔐 Monitor de Alterações de Arquivos com Alerta por E-mail
+
+Projeto desenvolvido em linguagem **C** com foco em **cibersegurança**, que monitora alterações em arquivos de um diretório especificado e envia alertas por e-mail sempre que uma mudança é detectada.
+
+## 💡 Objetivo
+
+O objetivo deste projeto é demonstrar um sistema simples de **detecção de alterações em arquivos** que pode ser utilizado como base para soluções de monitoramento de integridade, comuns em ambientes de segurança da informação.
+
+## 🚀 Funcionalidades
+
+- Monitora arquivos em um diretório específico.
+- Detecta alterações, exclusões e criações de arquivos.
+- Gera alertas por e-mail via SMTP.
+- Compatível com **Windows** e **Linux**.
+- Interface interativa via terminal.
+
+## ⚙️ Tecnologias utilizadas
+
+- Linguagem **C**
+- Bibliotecas padrão (`stdio.h`, `stdlib.h`, `string.h`, etc.)
+- `dirent.h` (para navegação de diretórios no Linux)
+- `windows.h` (para compatibilidade no Windows)
+- SMTP via `libcurl` (opcional, dependendo da implementação de envio de e-mail)
+
+## 🖥️ Como executar
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/Erictf32/file-monitor-c-alert.git
+cd file-monitor-c-alert
+
+## Para Linux
+gcc -o monitor main.c file_utils.c email_alert.c monitor.c -lcurl
+./monitor
+
+## Para Windowns
+gcc -o monitor.exe main.c file_utils.c email_alert.c monitor.c -lws2_32
+.\monitor.exe
