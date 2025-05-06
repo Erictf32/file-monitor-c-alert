@@ -22,9 +22,9 @@
 /* MODIFIQUE ESTES VALORES COM SUAS INFORMAÇÕES */
 #define SMTP_SERVER "smtp.gmail.com"
 #define SMTP_PORT 587
-#define EMAIL_FROM "bililopes2@gmail.com" // E-mail que enviará as notificacoes
-#define EMAIL_PASSWORD "dlqv tyfz zdlx wdma"  // Use senha de app para Gmail
-#define EMAIL_TO "papadefala@gmail.com" // E-mail que receberá as notificacoes
+#define EMAIL_FROM "xxxx@gmail.com" // E-mail que enviará as notificacoes
+#define EMAIL_PASSWORD "xxxx xxxx xxxx xxxx"  // Use senha de app para Gmail
+#define EMAIL_TO "xxxx@gmail.com" // E-mail que receberá as notificacoes
 #define ASSUNTO_PADRAO "[ALERTA] Alteracao detectada no sistema" // Título do e-mail
 
 typedef struct {
