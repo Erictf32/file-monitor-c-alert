@@ -31,9 +31,9 @@ git clone https://github.com/Erictf32/file-monitor-c-alert.git
 cd file-monitor-c-alert
 
 ## Para Linux
-gcc -o monitor main.c file_utils.c email_alert.c monitor.c -lcurl
-./monitor
+gcc -o detector detector_arquivos.c
+./detector ~\(Caminho da pasta monitorada)
 
 ## Para Windowns
-gcc -o monitor.exe main.c file_utils.c email_alert.c monitor.c -lws2_32
-.\monitor.exe
+gcc detector_arquivos.c -o detector_arquivos.exe
+& .\detector.exe "(Caminho da pasta monitorada)"
