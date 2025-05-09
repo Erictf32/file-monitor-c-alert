@@ -130,8 +130,9 @@ void enviar_alerta_email(const char* assunto, const char* mensagem) {
     #else
     char comando[TAMANHO_BUFFER * 2];
     snprintf(comando, sizeof(comando),
-        "echo -e \"%s\" | mail -s \"%s\" %s",
-        mensagem, assunto, EMAIL_TO);
+    	"printf \"Subject: %s\nFrom: %s\nTo: %s\n\n%s\" | sendmail -t",
+    	assunto, EMAIL_FROM, EMAIL_TO, mensagem);
+
     system(comando);
     #endif
     
